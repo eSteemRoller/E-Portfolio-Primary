@@ -30,6 +30,7 @@ section {
 
 .container {
     padding: 48px 0;
+    width: 100%;
 }
 
 .row {
@@ -268,3 +269,25 @@ PROJECTS
     font-size: 20px;
     margin-right: 12px;
 }
+
+.project__description--para {
+    margin: 16px 0;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+.footer {
+    background-color: #242424
+    display: flex;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    
+}
+
