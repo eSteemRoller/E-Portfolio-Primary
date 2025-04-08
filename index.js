@@ -18,9 +18,6 @@ function toggleContrast() {
 }
 
 
-
-
-
 function contact(email_submit) {
     email_submit.preventDefault();
     const loading = document.querySelector(`.modal__overlay--loading`);
