@@ -2,8 +2,8 @@
 // template_wss5nnd
 // 2oRTUQrHpH8BsiEhE
 
-function contact(event) {
-    event.preventDefault();
+function contact(email_submit) {
+    email_submit.preventDefault();
     const loading = document.querySelector(`.modal__overlay--loading`);
     const success = document.querySelector(`.modal__overlay--success`);
     loading.classList += ` modal__overlay--visible`
@@ -12,7 +12,7 @@ function contact(event) {
         .sendForm(
             `service_js40s9s`,
             `template_wss5nnd`,
-            event.target,
+            email_submit.target,
             `2oRTUQrHpH8BsiEhE`
         ).then(() => {
             loading.classList.remove(`modal__overlay--visible`);
@@ -24,4 +24,14 @@ function contact(event) {
                 Please, contact me directly via jasondoroughonfb@live.com.`
             ];
         });
+}
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove(`modal--open`);
+    }
+    isModalOpen = true;
+    document.body.classList += ` modal--open`;
 }
