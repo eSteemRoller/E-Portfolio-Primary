@@ -142,6 +142,16 @@ nav,
     transition: all 600ms;
 }
 
+.dark_theme .title,
+.dark_theme .section__title,
+.dark_theme .section__sub-title,
+.dark_theme .nav__link--anchor,
+.dark_theme .fa-circle-half-stroke,
+.dark_theme .header__para
+{
+    color: #fff;
+}
+
 
 /* 
 
@@ -268,7 +278,7 @@ nav {
 }
 
 .nav__link--anchor {
-    font-size: 16px;
+    font-size: 20px;
     color: #242424;
     font-weight: 700;
 }

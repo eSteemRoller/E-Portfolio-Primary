@@ -2,6 +2,25 @@
 // template_wss5nnd
 // 2oRTUQrHpH8BsiEhE
 
+
+let isModalOpen = false;
+let toggleContrast = false;
+
+
+function toggleContrast() {
+    contrastStatus = !contrastStatus;
+    if (contrastStatus) {
+        document.body.classList += ` dark_theme`;
+    }
+    else {
+        document.body.classList.remove(`dark_theme`);
+    }
+}
+
+
+
+
+
 function contact(email_submit) {
     email_submit.preventDefault();
     const loading = document.querySelector(`.modal__overlay--loading`);
@@ -26,7 +45,7 @@ function contact(email_submit) {
         });
 }
 
-let isModalOpen = false;
+
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
