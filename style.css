@@ -176,6 +176,10 @@ nav,
     color: #242424;
 }
 
+.dark_theme .projects__title {
+    color: #fff;
+}
+
 /* 
 
 LANDING PAGE
@@ -608,3 +612,6 @@ footer {
     color: #fff;
 }
 
+.footer__copyright {
+    margin-top: 32px;
+}

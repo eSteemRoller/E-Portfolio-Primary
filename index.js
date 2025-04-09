@@ -4,7 +4,7 @@
 
 
 let isModalOpen = false;
-let toggleContrast = false;
+let contrastStatus = false;
 
 
 function toggleContrast() {
