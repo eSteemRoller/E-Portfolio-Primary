@@ -17,9 +17,10 @@
             });
         })();
     </script>
+    <script src=`unsafe-inline` `unsafe-eval`></script>
 </head>
 <body>
-    <section id="landing_page">
+    <section id="landing_page" onmousemove="animateShapes(mouseMovement)">
         <nav>
             <figure>
                 <img id="personal_logo" src="/assets/logo.svg" alt="Jason's personal logo">
@@ -159,6 +160,15 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/semi circle.svg" class="animating_shape shape_0">
+        <img src="./assets/circle.svg" class="animating_shape shape_1">
+        <img src="./assets/squiggly.svg" class="animating_shape shape_2">
+        <img src="./assets/circle.svg" class="animating_shape shape_3">
+        <img src="./assets/triangle.svg" class="animating_shape shape_4">
+        <img src="./assets/circle.svg" class="animating_shape shape_5">
+        <img src="./assets/squiggly.svg" class="animating_shape shape_6">
+        <img src="./assets/circle.svg" class="animating_shape shape_7">
+        <img src="./assets/semi circle.svg" class="animating_shape shape_8">
     </section>
     <section id="projects">
         <div class="projects__container container">
@@ -196,7 +206,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer html data-scroll="1">
         <div class="container">
             <div class="footer__row row">
                 <figure>
@@ -221,7 +231,9 @@
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
-                    ">
+                    "
+                    onclick="toggleModal()"
+                    >
                     Contact
                     </a>
                     <a href="" class="

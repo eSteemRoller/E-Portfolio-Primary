@@ -232,9 +232,10 @@ LANDING PAGE
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
 }
 
 .scroll {
@@ -614,4 +615,52 @@ footer {
 
 .footer__copyright {
     margin-top: 32px;
+}
+
+/*
+
+ANIMATING SHAPES
+
+*/
+
+.animating_shape {
+    position: fixed;
+
+}
+
+.shape_0 {
+    top: 15vh;
+    left: 5vw;
+}
+.shape_1 {
+    top: 15vh;
+    left: 40vw;
+}
+.shape_2 {
+    top: 15vh;
+    left: 80vw;
+}
+.shape_3 {
+    top: 50vh;
+    left: 5vw;
+}
+.shape_4 {
+    top: 50vh;
+    left: 55vw;
+}
+.shape_5 {
+    top: 50vh;
+    left: 80vw;
+}
+.shape_6 {
+    top: 80vh;
+    left: 5vw;
+}
+.shape_7 {
+    top: 85vh;
+    left: 45vw;
+}
+.shape_8 {
+    top: 80vh;
+    left: 80vw;
 }

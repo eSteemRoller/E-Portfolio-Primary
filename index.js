@@ -2,9 +2,13 @@
 // template_wss5nnd
 // 2oRTUQrHpH8BsiEhE
 
+// animateShapes(mouseMovement)
 
-let isModalOpen = false;
+
 let contrastStatus = false;
+let isModalOpen = false;
+// let mouseMovement = false;
+const scaleFactor = 1 / 20;
 
 
 function toggleContrast() {
@@ -17,6 +21,15 @@ function toggleContrast() {
     }
 }
 
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove(`modal--open`);
+    }
+    isModalOpen = true;
+    document.body.classList += ` modal--open`;
+}
 
 function contact(email_submit) {
     email_submit.preventDefault();
@@ -43,11 +56,14 @@ function contact(email_submit) {
 }
 
 
-function toggleModal() {
-    if (isModalOpen) {
-        isModalOpen = false;
-        return document.body.classList.remove(`modal--open`);
+function animateShapes(mouseMovement) {
+    const allShapes = document.querySelectorAll(`.animating_shape`);
+    const x = mouseMovement.clientX * scaleFactor;
+    const y = mouseMovement.clientY * scaleFactor;
+    
+    for (let i = 0; i < allShapes.length; ++i) {
+        const isOdd = i % 2 !== 0;
+        const booleanInteger = isOdd ? -1 : 1;
+        allShapes[i].style.transform = `translate(${x * booleanInteger}px, ${y * booleanInteger}px)`;
     }
-    isModalOpen = true;
-    document.body.classList += ` modal--open`;
 }
