@@ -585,6 +585,7 @@ FOOTER
 */
 
 footer {
+    position: relative;
     background-color: #242424;
     display: flex;
     padding: 6% 0;
@@ -663,4 +664,34 @@ ANIMATING SHAPES
 .shape_8 {
     top: 80vh;
     left: 80vw;
+}
+
+/*
+
+MOBILE ADAPTATIONS
+
+*/
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+
+    .header__para {
+        font-size: 20px;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    .modal__half {
+        width: 100%;
+    }
 }

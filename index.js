@@ -7,7 +7,6 @@
 
 let contrastStatus = false;
 let isModalOpen = false;
-// let mouseMovement = false;
 const scaleFactor = 1 / 20;
 
 
@@ -60,10 +59,20 @@ function animateShapes(mouseMovement) {
     const allShapes = document.querySelectorAll(`.animating_shape`);
     const x = mouseMovement.clientX * scaleFactor;
     const y = mouseMovement.clientY * scaleFactor;
-    
+
     for (let i = 0; i < allShapes.length; ++i) {
         const isOdd = i % 2 !== 0;
         const booleanInteger = isOdd ? -1 : 1;
-        allShapes[i].style.transform = `translate(${x * booleanInteger}px, ${y * booleanInteger}px)`;
+        allShapes[i].style.transform = `translate(${x * booleanInteger}px, ${y * booleanInteger}px) rotate(${x * booleanInteger * 10}deg)`;
+
     }
 }
+
+/*
+document.addEventListener(`DOMContentLoaded`, function() {
+    const landingPage = document.getElementById(`landing_page`);
+    if (landingPage) {
+        landingPage.addEventListener(`mouseMovement`, animateShapes);
+    }
+});
+*/
