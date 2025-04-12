@@ -7,6 +7,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style-type: none;
 }
@@ -14,6 +18,7 @@ li {
 p {
     line-height: 1.5;
     font-size: 16px;
+    text-align: justify;
 }
 
 a {
@@ -196,14 +201,14 @@ LANDING PAGE
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 0 32px;
 }
 
 .header__para {
     font-size: 24px;
     line-height: 2;
-    max-width: 464px;
+    max-width: 720px;
 }
 
 .social__list {
@@ -538,12 +543,13 @@ PROJECTS
 .project__description {
     position: absolute;
     top: 50%;
-    left: 88px;
+    left: 15%;
+    right: 15%;
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
     color: white;
-    max-width: 464px;
+    max-width: 720px;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
@@ -675,10 +681,23 @@ MOBILE ADAPTATIONS
 @media (max-width: 768px) {
     .title {
         font-size: 80px;
+        text-align: center;
     }
 
     .header__para {
         font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .social__list {
+        justify-content: center;
+    }
+
+    .project__description {
+        left: 4%;
+        right: 4%;
+        margin: 16px 8px;
     }
 
     .modal {
@@ -693,5 +712,41 @@ MOBILE ADAPTATIONS
 
     .modal__half {
         width: 100%;
+        padding: 40px;
+    }
+
+    .modal__input {
+        border: 2px solid #c0c4cc;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 56px;
+    }
+
+    .header__para {
+        font-size: 16px;
+    }
+
+    .nav__link:first-child {
+        display: none;
+    }
+
+    .project__description--title {
+        font-size: 24px;
+    }
+
+    p {
+        line-height: 1.25;
+        font-size: 12px;
+    }
+
+    .mail__btn {
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        bottom: 40px;
     }
 }

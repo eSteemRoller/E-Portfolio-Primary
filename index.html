@@ -25,7 +25,7 @@
                 <img id="personal_logo" src="/assets/logo.svg" alt="Jason's personal logo">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -33,7 +33,7 @@
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
@@ -77,9 +77,11 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-            <i class="fa-solid fa-envelope"></i>
-        </button>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-solid fa-envelope"></i>
+            </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -212,18 +214,20 @@
                     <img src="./assets/logo.svg" class="footer__logo--img" alt="personal logo image">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="" class="
+                    <a href="https://github.com/eSteemRoller" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
-                    ">
+                    "
+                    target="_blank">
                     GitHub
                     </a>
                     <a href="" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
-                    ">
+                    "
+                    target="_blank">
                     LinkedIn
                     </a>
                     <a href="#" class="
@@ -235,11 +239,12 @@
                     >
                     Contact
                     </a>
-                    <a href="" class="
+                    <a href="./assets/David Bragg Resume.pdf" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
-                    ">
+                    "
+                    target="_blank">
                     Resume
                     </a>
                 </div>
