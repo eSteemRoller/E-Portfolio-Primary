@@ -69,10 +69,10 @@ function animateShapes(mouseMovement) {
 }
 
 /*
-document.addEventListener(`DOMContentLoaded`, function() {
+document.addEventListener(`DOMContentLoaded`, animateShapes() {
     const landingPage = document.getElementById(`landing_page`);
     if (landingPage) {
-        landingPage.addEventListener(`mouseMovement`, animateShapes);
+        landingPage.addEventListener(`onmousemove`, animateShapes);
     }
 });
 */
