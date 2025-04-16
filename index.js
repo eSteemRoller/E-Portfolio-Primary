@@ -72,3 +72,8 @@ function animateShapes(mouseMovement) {
     }
 }
 
+
+let contrastStatus2 = false;
+let isModalOpen2 = false;
+const scaleFactor2 = 1 / 20;
+const domBody2 = document.getElementById(`root`);
